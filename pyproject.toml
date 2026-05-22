@@ -1,7 +1,7 @@
 [project]
 name = "memento"
 version = "0.1.0"
-description = "Add your description here"
+description = "Memento: Fine-tuning LLM Agents without Fine-tuning LLMs - A memory-based continual learning framework for LLM agents"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -25,3 +25,11 @@ dependencies = [
     "xmltodict==0.14.2",
     "yt-dlp>=2025.8.27",
 ]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+asyncio_mode = "auto"
+addopts = "-v --tb=short"

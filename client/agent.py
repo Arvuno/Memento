@@ -180,7 +180,7 @@ class HierarchicalClient:
                 if tool.name in self.sessions:
                     raise RuntimeError(f"Duplicate tool name '{tool.name}'.")
                 self.sessions[tool.name] = session
-        print("Connected tools:", list(self.sessions.keys()))
+        logger.info(f"Connected to {len(self.sessions)} MCP servers: {list(self.sessions.keys())}")
 
     async def _tools_schema(self) -> List[Dict[str, Any]]:
         result, cached = [], {}
@@ -218,6 +218,7 @@ class HierarchicalClient:
             try:
                 tasks = json.loads(_strip_fences(meta_content))["plan"]
             except Exception as e:
+                logger.warning(f"Failed to parse planner response: {e}")
                 return f"[planner error] {e}: {meta_content}"
 
             for task in tasks:
