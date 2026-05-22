@@ -1,7 +1,7 @@
 [project]
 name = "memento"
 version = "0.1.0"
-description = "Add your description here"
+description = "Memento: A memory-based continual learning framework for LLM agents without fine-tuning LLMs"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
