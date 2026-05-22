@@ -409,6 +409,30 @@ class CustomInterpreter(BaseInterpreter):
 
 ---
 
+## 🗺️ Roadmap
+
+### Phase 1: Core Enhancements (Q1 2026)
+- **User Personal Memory Mechanism**: Implement user-preference search to personalize case retrieval
+- **Memory Compression**: Efficient memory pruning and compression strategies to reduce storage costs
+- **Tool Refinement**: Enhance existing MCP tools with better error handling and reliability
+
+### Phase 2: Multi-modal Expansion (Q2 2026)
+- **Multi-modal Memory**: Extend memory to support images, videos, audio, and other modalities
+- **Rich Media Case Bank**: Enable storage and retrieval of non-textual experiences
+- **Cross-modal Retrieval**: Allow querying cases across different media types
+
+### Phase 3: Performance & Scalability (Q3 2026)
+- **Distributed Memory**: Scale memory system across multiple agents and nodes
+- **Benchmark Expansion**: Evaluate on additional benchmarks (MMLU, HumanEval, etc.)
+- **Latency Optimization**: Reduce case retrieval latency for real-time applications
+
+### Phase 4: Ecosystem Growth (Q4 2026)
+- **Community Tools**: Publish official tool library and contribution guidelines
+- **Enterprise Features**: Multi-tenant support, audit logging, and compliance tools
+- **Integration Plugins**: Pre-built connectors for popular LLM frameworks (LangChain, LlamaIndex)
+
+---
+
 ## 🙏 Acknowledgement
 
 * Some of the code in the toolkits and interpreters is adapted from [Camel-AI](https://github.com/camel-ai/camel).
