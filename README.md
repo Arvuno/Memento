@@ -1,5 +1,21 @@
 # Memento: Fine-tuning LLM Agents **without** Fine-tuning LLMs
 
+
+## Quick Start
+
+Install with:
+```bash
+pip install memento
+```
+
+Or clone and run:
+```bash
+git clone https://github.com/Memento-Teams/memento.git
+cd memento
+python setup.py install
+```
+
+
 > A memory-based, continual-learning framework that helps LLM agents improve from experience **without** updating model weights.
 
 <p align="center">
@@ -35,24 +51,6 @@
   </tr>
 </table>
 
-
-## Quick Start
-
-### Installation
-
-```bash
-pip install memento-agents
-```
-
-### Basic Usage
-
-```python
-from memento import MementoAgent
-
-agent = MementoAgent()
-result = agent.run("Your task here")
-print(result)
-```
 
 ## 📰 News
 - [2025.10.05] We’re excited to announce that our parametric Case-Based Reasoning inference code is now officially open-sourced! 🎉
