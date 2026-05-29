@@ -457,3 +457,6 @@ We welcome contributions! Please see our contributing guidelines for:
 
 ## Contributing
 PRs welcome!
+
+<!-- Contributor: Arvuno - documentation update -->
+
